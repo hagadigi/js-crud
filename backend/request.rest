@@ -1,0 +1,28 @@
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/users/1
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+  "firstName":"John",
+  "lastName":"Doe",
+  "phoneNumber": "628581395103"
+}
+
+###
+PATCH http://localhost:5000/users/1
+Content-Type: application/json
+
+{
+  "firstName":"John",
+  "lastName":"Damang",
+  "phoneNumber": "+628581395103"
+}
+
+###
+DELETE http://localhost:5000/users/1
+ 
